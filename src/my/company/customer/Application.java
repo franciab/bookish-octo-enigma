@@ -59,6 +59,8 @@ public class Application {
 			LOGGER.log(Level.SEVERE, "File not found with exception: ", e);
 		} catch (IOException e) {
 			LOGGER.log(Level.SEVERE, null, e);
+		} catch (Exception e) {
+			LOGGER.log(Level.SEVERE, null, e);
 		}
 		return customerList;
 	}
